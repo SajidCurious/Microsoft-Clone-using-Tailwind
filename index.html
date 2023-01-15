@@ -12,7 +12,9 @@
     ></script>
   </head>
   <body>
-    <div class="navbar flex justify-between items-center px-1 py-1">
+    <div
+      class="navbar flex justify-between items-center px-1 py-1 md:px-6 md:py-4"
+    >
       <div class="first flex flex-row justify-center items-center md:order-2">
         <div class="hamburger p-4 cursor-pointer md:hidden mr-2">
           <div class="line h-0.5 w-6 my-1 bg-black"></div>
@@ -46,13 +48,18 @@
         </div>
       </div>
     </div>
-    <div class="slider flex flex-col-reverse md:flex-row m-2">
-      <div class="left mx-4 my-6">
+    <div class="slider flex flex-col mx-2">
+      <div class="top">
+        <img src="profile.avif" alt="error" class="rounded-md w-full h-96" />
+      </div>
+      <div
+        class="bottom mx-4 my-6 md:shadow-md md:shadow-gray-500 md:px-8 md:py-8"
+      >
         <h1 class="text-2xl font-semibold mb-3">Microsoft 365</h1>
         <p class="font-normal">
           Everything you need to achieve more in less time
         </p>
-        <div class="buttons mb-10">
+        <div class="buttons mb-6">
           <button
             class="bg-blue-800 text-white font-semibold py-2 px-4 mt-6 mr-6 rounded-md"
           >
@@ -63,9 +70,8 @@
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
-        <hr />
       </div>
-      <div class="right"><img src="profile.avif" alt="" /></div>
+      <hr />
     </div>
   </body>
 </html>
