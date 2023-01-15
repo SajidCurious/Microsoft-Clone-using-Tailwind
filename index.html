@@ -13,7 +13,7 @@
   </head>
   <body>
     <div
-      class="navbar flex justify-between items-center px-1 py-1 md:px-6 md:py-4"
+      class="navbar flex justify-between items-center px-1 py-1 md:px-6 md:py-6"
     >
       <div class="first flex flex-row justify-center items-center md:order-2">
         <div class="hamburger p-4 cursor-pointer md:hidden mr-2">
@@ -28,14 +28,14 @@
       <div class="logo text-center md:order-1 flex">
         <div class="mr-3 w-28"><img src="logo.png" alt="error" /></div>
         <div
-          class="hamburger-data absolute md:static md:w-auto -translate-x-96 md:translate-x-0 bg-gray-200 md:bg-white md:flex space-x-3"
+          class="hamburger-data absolute md:static md:w-auto -translate-x-96 md:translate-x-0 bg-gray-200 md:bg-white md:flex space-x-4"
         >
-          <div>Microsoft 365</div>
-          <div>Teams</div>
-          <div>Windows</div>
-          <div>Surface</div>
-          <div>Xbox</div>
-          <div>Support</div>
+          <div class="cursor-pointer">Microsoft 365</div>
+          <div class="cursor-pointer">Teams</div>
+          <div class="cursor-pointer">Windows</div>
+          <div class="cursor-pointer">Surface</div>
+          <div class="cursor-pointer">Xbox</div>
+          <div class="cursor-pointer">Support</div>
         </div>
       </div>
       <div class="last flex justify-center items-center md:order-3">
@@ -48,30 +48,60 @@
         </div>
       </div>
     </div>
-    <div class="slider flex flex-col mx-2">
-      <div class="top">
-        <img src="profile.avif" alt="error" class="rounded-md w-full h-96" />
-      </div>
+    <div class="slider flex flex-col-reverse mx-2 lg:flex-row">
       <div
-        class="bottom mx-4 my-6 md:shadow-md md:shadow-gray-500 md:px-8 md:py-8"
+        class="bottom mx-4 my-2 md:shadow-md md:shadow-gray-400 lg:shadow-none lg:bg-[#cbe3fb] md:px-8 md:py-8 md:rounded-sm lg:rounded-none lg:mx-0 lg:my-0 lg:w-1/2 lg:flex lg:justify-center lg:items-start lg:flex-col lg:pl-52"
       >
         <h1 class="text-2xl font-semibold mb-3">Microsoft 365</h1>
         <p class="font-normal">
           Everything you need to achieve more in less time
         </p>
-        <div class="buttons mb-6">
+        <div class="buttons mb-2">
           <button
             class="bg-blue-800 text-white font-semibold py-2 px-4 mt-6 mr-6 rounded-md"
           >
             For one person
           </button>
-          <button class="text-blue-700 font-semibold">
+          <button class="text-blue-700 font-semibold lg:text-black lg:mt-6">
             For up to six people
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
       </div>
-      <hr />
+      <div class="top lg:w-1/2">
+        <img
+          src="profile.avif"
+          alt="error"
+          class="rounded-sm w-full h-96 lg:rounded-none"
+        />
+      </div>
+    </div>
+    <hr class="md:hidden mt-4" />
+    <div
+      class="products px-4 py-10 flex flex-col lg:flex-row lg:justify-around"
+    >
+      <div
+        class="flex flex-row justify-around mb-20 lg:mb-0 lg:flex lg:justify-between"
+      >
+        <div class="one">
+          <img src="microsofticon.webp" alt="error" class="pl-14" />
+          <a href="#">Choose Microsoft 365</a>
+        </div>
+        <div class="two">
+          <img src="surfacedeviceicon.webp" alt="error" class="pl-8" />
+          <a href="">Explore devices</a>
+        </div>
+      </div>
+      <div class="flex flex-row justify-around">
+        <div class="three">
+          <img src="xboxicon.webp" alt="error" class="pl-10" />
+          <a href="">Buy Xbox games</a>
+        </div>
+        <div class="four">
+          <img src="microsofticon.webp" alt="error" class="pl-8" />
+          <a href="#">Get Windows 11</a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
